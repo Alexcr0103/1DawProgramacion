@@ -9,7 +9,7 @@ public class Ejercicio2 {
 		int var1 = Integer.parseInt(str);
 		System.out.println("El número entero es: " + var1);
 		
-		str = JOptionPane.showInputDialog("Introduce un número flotante");
+		
 		float var2 = Float.parseFloat(str);
 		System.out.println("El número flotante es " + var2);
 		
