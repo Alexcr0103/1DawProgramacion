@@ -7,7 +7,7 @@ public class Ejercicio01numeroMayor {
 	public static void main(String[] args) {
 		String str = JOptionPane.showInputDialog("Introduzca un número");
 		
-		int var1 = int.parseInt (str)
+		int var1 = int.parseInt (str))
 		
 		
 		if (var1 > var2)
