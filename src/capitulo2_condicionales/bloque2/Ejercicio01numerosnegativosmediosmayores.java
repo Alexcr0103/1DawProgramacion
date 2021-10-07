@@ -6,7 +6,7 @@ public class Ejercicio01numerosnegativosmediosmayores {
 
 	public static void main(String[] args) {
 		
-		int num, sumanegativos, sumabajos, sumamedios, sumagrandes;
+		int num, sumanegativos = 0, sumabajos = 0, sumamedios = 0, sumagrandes = 0;
 		System.out.println("Introduzca un número ");
 		
 		Scanner sc = new Scanner (System.in); 
@@ -15,48 +15,140 @@ public class Ejercicio01numerosnegativosmediosmayores {
 		
 		if (num < 0) {
 			sumanegativos = num;
-			sc = new Scanner (System.in); 
-			num = sc.nextInt();
-			System.out.println(sumanegativos);
 			
-			
-		
 		}
 		else {
-			  if (num < 25) {
+			  if (num <= 25) {
 				sumabajos = num;
-				sc = new Scanner (System.in); 
-				num = sc.nextInt();
-				
-
-			  }
+		
+			   }
 			  else {
-				  if (num < 250) {
+				  if (num <= 250) {
 						sumamedios = num;
-						sc = new Scanner (System.in); 
-						num = sc.nextInt();
 						
-
-						
-						
-					}
+				   }
 				  
 			   else {
 					if (num > 250) {
 
-						num = sc.nextInt();
-						sc = new Scanner (System.in); 
-
-						sumagrandes = num;
-						
-					
-					
+					sumagrandes = num;										
 					}
-				}
-			 
-			}
+				}			 
+			}		
+		}
 		
+		System.out.println("Introduzca un número ");
+		
+		sc = new Scanner (System.in); 
+		num = sc.nextInt();
+		if (num < 0) {
+			sumanegativos = num + sumanegativos;
+			
+		}
+		else {
+			  if (num <= 25) {
+				sumabajos = num + sumabajos;
+		
+			   }
+			  else {
+				  if (num <= 250) {
+						sumamedios = num + sumamedios;
+						
+				   }
+				  
+			   else {
+					if (num > 250) {
+
+					sumagrandes = num + sumagrandes;										
+					}
+				}			 
+			}		
+		}
+		System.out.println("Introduzca un número ");
+		
+		sc = new Scanner (System.in); 
+		num = sc.nextInt();
+		if (num < 0) {
+			sumanegativos = num + sumanegativos;
+			
+		}
+		else {
+			  if (num <= 25) {
+				sumabajos = num + sumabajos;
+		
+			   }
+			  else {
+				  if (num <= 250) {
+						sumamedios = num + sumamedios;
+						
+				   }
+				  
+			   else {
+					if (num > 250) {
+
+					sumagrandes = num + sumagrandes;										
+					}
+				}			 
+			}		
+		}
+		System.out.println("Introduzca un número ");
+		
+		sc = new Scanner (System.in); 
+		num = sc.nextInt();
+		if (num < 0) {
+			sumanegativos += num;
+			
+		}
+		else {
+			  if (num <= 25) {
+				sumabajos = num + sumabajos;
+		
+			   }
+			  else {
+				  if (num <= 250) {
+						sumamedios = num + sumamedios;
+						
+				   }
+				  
+			   else {
+					if (num > 250) {
+
+					sumagrandes = num + sumagrandes;										
+					}
+				}			 
+			}		
+		}
+		System.out.println("Introduzca un número ");
+		
+		sc = new Scanner (System.in); 
+		num = sc.nextInt();
+		if (num < 0) {
+			sumanegativos = num + sumanegativos;
+			
+		}
+		else {
+			  if (num <= 25) {
+				sumabajos = num + sumabajos;
+		
+			   }
+			  else {
+				  if (num <= 250) {
+						sumamedios = num + sumamedios;
+						
+				   }
+				  
+			   else {
+					if (num > 250) {
+
+					sumagrandes = num + sumagrandes;										
+					}
+				}			 
+			}		
+		}
+		System.out.println("La suma de los números negativos es " + sumanegativos);
+		System.out.println("La suma de los números bajos es " + sumabajos);
+		System.out.println("La suma de los números medios es " + sumamedios);
+		System.out.println("La suma de los números grandes " +  sumagrandes);
 		
 	}
-
 }
