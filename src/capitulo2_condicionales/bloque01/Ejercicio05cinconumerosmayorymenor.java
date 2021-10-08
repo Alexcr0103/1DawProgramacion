@@ -1,4 +1,4 @@
-package capitulo2_condicionales.bloque1;
+package capitulo2_condicionales.bloque01;
 
 import java.util.Scanner;
 

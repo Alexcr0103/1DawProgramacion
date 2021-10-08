@@ -1,4 +1,4 @@
-package Capitulo1.bloque01;
+package capitulo01_numenteros.bloque01;
 
 import javax.swing.JOptionPane;
 
