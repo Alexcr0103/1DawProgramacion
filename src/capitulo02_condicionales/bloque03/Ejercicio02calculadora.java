@@ -43,7 +43,7 @@ public class Ejercicio02calculadora {
 			float num3, num4;
 			
 			System.out.println("Dame dos números ");		
-			num3 = sc.nextInt();
+			num3 = sc.nextFloat();
 			num4 = sc.nextInt();
 			
 			
