@@ -37,7 +37,7 @@ public class Ejercicio02calculadora {
 			
 			
 			
-			System.out.println("La multiplicacion es " + (Math.pow(num1, num2)));
+			System.out.println("La multiplicacion es " +(num1 * num2));
 			break;
 		case 3: 
 			float num3, num4;

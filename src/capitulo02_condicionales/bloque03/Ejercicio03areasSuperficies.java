@@ -38,7 +38,7 @@ public class Ejercicio03areasSuperficies {
 					num4 = sc.nextDouble();
 					radio = Math.pow(num4, 2);
 					numpi = Math.PI;	
-					area1 = Math.pow(numpi, Math.pow(num4, 2));
+					area1 = (numpi * radio);
 					System.out.println("El área de la circunferencia es " + area1);
 			}
 
