@@ -19,13 +19,36 @@ public class Ejercicio02calculadora {
 		switch (opcion) {
 		case 1: 
 			int radicando, indice;
-			
-			raiz = sc.nextInt();
+			System.out.println("Dame una raiz, un radicando " + " y un indice ");	
+			raiz = sc.nextInt();								
 			radicando = sc.nextInt();
 			indice = sc.nextInt();
-			System.out.println("Dame un radicando " + radicando + " y un indice " + indice);
 			
-			System.out.println("La raiz cuadrada de " + raiz + " es" + (Math.pow(radicando, (float) indice)));
+			
+			
+			System.out.println("La raiz cuadrada de " + raiz + " es " + (Math.pow(radicando, (float) indice)));
+			break;
+		case 2: 
+			int num1, num2;
+			
+			System.out.println("Dame dos números ");		
+			num1 = sc.nextInt();
+			num2 = sc.nextInt();
+			
+			
+			
+			System.out.println("La multiplicacion es " + (Math.pow(num1, num2)));
+			break;
+		case 3: 
+			float num3, num4;
+			
+			System.out.println("Dame dos números ");		
+			num3 = sc.nextInt();
+			num4 = sc.nextInt();
+			
+			
+			
+			System.out.println("El resto es " + (num3 / num4));
 			break;
 				
 				
