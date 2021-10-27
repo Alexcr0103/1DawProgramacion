@@ -19,7 +19,7 @@ public class Ejercicio04buscarValorPosicionNoEncontrar {
 			if (array[i] ==num1) {
 			System.out.println("\nEl número " + num1 + " ha sido encontrado en la posición " +(i+1)+ " del array");
 			numEsta=true;
-			break;
+			
 			}
 		}
 		if (numEsta==false) {

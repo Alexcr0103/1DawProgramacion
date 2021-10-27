@@ -8,17 +8,17 @@ public class Ejercicio02arrayConLimiteSuperiorInferior {
 		// TODO Auto-generated method stub
 
 		
-		int limitsup, limitinf;
+		int limitSup, limitInf;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Introduce el límite superior ");
-		limitsup=sc.nextInt();
+		limitSup=sc.nextInt();
 		System.out.println("Introduce el límite inferior ");				
-		limitinf=sc.nextInt();
+		limitInf=sc.nextInt();
 		int array []= new int [150];
 				
 			
 		for (int i=0; i<array.length;i++){
-			array[i]= (int) Math.round(Math.random() * (limitsup - limitinf)) + limitinf;
+			array[i]= (int) Math.round(Math.random() * (limitSup - limitInf)) + limitInf;
 			System.out.print(array[i] + " ");
 		}
 
