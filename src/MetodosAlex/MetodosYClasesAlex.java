@@ -41,6 +41,42 @@ public class MetodosYClasesAlex {
 	public static int obtenerNumeroAzar (int min, int max) {
 		 return (int) Math.round(Math.random() * (max - min)) + min;
 	}
-	
+	/**
+	 * 
+	 * @param matriz
+	 */
+	//Obtener números aleatorios dentro de un rango en una matriz.(Los 100 se puede cambiar por los intervalos necesarios)
+	public static void inicializarUnaMatrizAleatoriaIntervalo (int matriz [][]) {
+		for (int i = 0 ; i<matriz.length; i++) {
+			for (int j = 0; j<matriz.length ; j ++) {
+				matriz [i][j] = (int) Math.round((Math.random()* (100-(-100)))+-100);
+			}
+		}
+	}
+	/**
+	 * 
+	 * @param matriz
+	 */
+	//Obtener números aleatorios en una matriz.
+	public static void inicializarUnaMatrizAleatoria (int matriz [][]) {
+		for (int i = 0 ; i<matriz.length; i++) {
+			for (int j = 0; j<matriz.length ; j ++) {
+				matriz [i][j] = (int) Math.round((Math.random()*100));
+			}
+		}
+	}
+	/**
+	 * 
+	 * @param matriz
+	 */
+	//Se visualiza una matriz.
+	public static void visualizarUnaMatriz (int matriz [][]) {
+		for (int i = 0 ; i<matriz.length; i++) {
+			for (int j = 0; j<matriz.length ; j ++) {
+				System.out.print(matriz [i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
 	
 }
