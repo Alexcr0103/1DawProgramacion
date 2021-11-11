@@ -14,7 +14,7 @@ public class Ejercicio01LongitudArrayParImparConMetodos {
 	}
 
 
-	private static void inicializarArray(int[] array) {
+	public static void inicializarArray(int[] array) {
 		// TODO Auto-generated method stub
 		
 		for (int i = 0; i < array.length ; i ++) {
