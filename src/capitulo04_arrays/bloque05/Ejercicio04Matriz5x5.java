@@ -5,13 +5,11 @@ import MetodosAlex.MetodosYClasesAlex;
 public class Ejercicio04Matriz5x5 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int matriz[][] = new int [5][5];
-		int matriz2[][] = new int [][] {	{0,		2,		3,		4,		 0},
-											{0, 	7,		8,		8,		10},
-											{0,		0,		13,		14,		15},
-											{0,		0,		0,		19,		20},
-											{0,		0,		0,		0,		25}};
+		
+		//int matriz[][] = new int [5][5];
+		int matriz2[][] = new int [][] {	{1,		1,		5},
+											{1, 	2,		3},
+											{-5,	3,		4}};
 		
 		//MetodosYClasesAlex.inicializarUnaMatrizAleatoria(matriz);
 		esPositiva(matriz2);
@@ -21,12 +19,17 @@ public class Ejercicio04Matriz5x5 {
 		System.out.println(" ");
 		System.out.println("La matriz unidimensional ");
 		matrizUnidimensional(matriz2);
-		
-		for (int i = 0; i < matriz.length; i ++) {
-			for (int j = 0; j < matriz.length; j++ ) {
-			}
-		}
+		opuesta(matriz2);
+		matriz2 = opuesta(matriz2);
+		System.out.println(" ");
+		System.out.println("Matriz opuesta" );
+		MetodosYClasesAlex.visualizarUnaMatriz(matriz2);
 }
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
 	public static boolean esPositiva (int matriz[][]) {
 		boolean esPositiva = true;
 		
@@ -43,9 +46,13 @@ public class Ejercicio04Matriz5x5 {
 			System.out.println("La matriz no es positiva ");
 		}
 		System.out.println(" ");
-		MetodosYClasesAlex.visualizarUnaMatriz(matriz);
 		return esPositiva;
 	}	
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
 	public static boolean esDiagonal (int matriz[][]) {
 		boolean esDiagonal = true;
 		
@@ -59,6 +66,11 @@ public class Ejercicio04Matriz5x5 {
 		System.out.println("La matriz diagonal es " + esDiagonal);
 		return esDiagonal;
 	}
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
 	public static boolean esTrianguloSuperior (int matriz [][]) {
 		boolean esTrianguloSuperior=true;
 		for (int i = 0; i < matriz.length; i ++) {
@@ -72,6 +84,11 @@ public class Ejercicio04Matriz5x5 {
 		return esTrianguloSuperior;
 		
 	}
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
 	public static boolean esDispersa(int matriz[][]) {
 		boolean dispersa = true;
 		int count = 0;
@@ -104,6 +121,11 @@ public class Ejercicio04Matriz5x5 {
 		System.out.println("¿La matriz es dispersa? " + dispersa);
 		return dispersa;
 	}
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
 	public static int[] matrizUnidimensional(int matriz[][]) {
 		int numValores = 0;
 		
@@ -122,5 +144,20 @@ public class Ejercicio04Matriz5x5 {
 			}
 		}
 		return array;
+	}
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
+	public static int[][] opuesta(int matriz[][]){
+		int matriz3[][] = new int [matriz.length][matriz.length];
+		
+		for (int i = 0; i < matriz[0].length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				matriz3[i][j] = matriz[i][j] * -1;
+			}
+		}		
+		return matriz3;
 	}
 }
