@@ -6,7 +6,7 @@ public class Ejercicio02PorcentajeSuspensosYAprobados {
 
 	public static void main(String[] args) {
 		//Declaramos el array
-		int array[] = new int[20];
+		int array[] = new int[23];
 		//Llamamos a los metodos que vamos a utilizar, uno para inicializar el array y otro en el que calculamos los porcentajes
 		//de aprobados y suspensos
 		MetodosYClasesAlex.inicializarArrayPor10(array);
@@ -29,8 +29,8 @@ public class Ejercicio02PorcentajeSuspensosYAprobados {
 		}
 		System.out.println("El número de suspensos es " + suspensos);
 		System.out.println("El número de aprobados es " + aprobados);
-		System.out.println("El porcentaje de suspensos es " + (suspensos*100)/array.length + "%");
-		System.out.println("El porcentaje de aprobados es " + (aprobados*100)/array.length + "%");
+		System.out.println("El porcentaje de suspensos es " + (float)(suspensos*100)/array.length + "%");
+		System.out.println("El porcentaje de aprobados es " + (float)(aprobados*100)/array.length + "%");
 	}
 
 }

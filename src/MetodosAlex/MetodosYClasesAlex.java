@@ -43,6 +43,16 @@ public class MetodosYClasesAlex {
 	}
 	/**
 	 * 
+	 * @param array
+	 */
+	public static void inicializarArrayAleatorioIntervalo(int array[]) {	
+		//array azar con intervalos
+		for (int i = 0; i < array.length; i++) {
+			array[i] = (int) Math.round(Math.random() * (100 - 100)) + 100;
+		}
+	}
+	/**
+	 * 
 	 * @param matriz
 	 */
 	//Obtenerr números aleatorios dentro de un rango en una matriz.(Los 100 se puede cambiar por los intervalos necesarios)

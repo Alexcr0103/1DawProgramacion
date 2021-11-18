@@ -9,7 +9,7 @@ public class Ejercicio04Matriz5x5 {
 		//int matriz[][] = new int [5][5];
 		int matriz2[][] = new int [][] {	{1,		1,		5},
 											{1, 	2,		3},
-											{-5,	3,		4}};
+											{5,		3,		4}};
 		
 		//MetodosYClasesAlex.inicializarUnaMatrizAleatoria(matriz);
 		esPositiva(matriz2);
@@ -19,8 +19,9 @@ public class Ejercicio04Matriz5x5 {
 		System.out.println(" ");
 		System.out.println("La matriz unidimensional ");
 		matrizUnidimensional(matriz2);
+		System.out.println(" ");
+		esMatrizSimetrica(matriz2);
 		opuesta(matriz2);
-		matriz2 = opuesta(matriz2);
 		System.out.println(" ");
 		System.out.println("Matriz opuesta" );
 		MetodosYClasesAlex.visualizarUnaMatriz(matriz2);
@@ -116,9 +117,10 @@ public class Ejercicio04Matriz5x5 {
 				count = 0;
 			} else {
 				dispersa = false;
-			}			
+			}
+			
 		}
-		System.out.println("¿La matriz es dispersa? " + dispersa);
+		System.out.println("La matriz es dispersa: " + dispersa);
 		return dispersa;
 	}
 	/**
@@ -143,6 +145,7 @@ public class Ejercicio04Matriz5x5 {
 				System.out.print(array[i] + " ");
 			}
 		}
+		System.out.println(" ");
 		return array;
 	}
 	/**
@@ -150,14 +153,30 @@ public class Ejercicio04Matriz5x5 {
 	 * @param matriz
 	 * @return
 	 */
-	public static int[][] opuesta(int matriz[][]){
-		int matriz3[][] = new int [matriz.length][matriz.length];
+	public static int[][] opuesta(int matriz2[][]){
 		
-		for (int i = 0; i < matriz[0].length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				matriz3[i][j] = matriz[i][j] * -1;
+		for (int i = 0; i < matriz2.length; i++) {
+			for (int j = 0; j < matriz2.length; j++) {
+				matriz2[i][j] = (matriz2[i][j] * -1);
 			}
 		}		
-		return matriz3;
+		return matriz2;
+	}
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
+	public static boolean esMatrizSimetrica (int matriz[][]){
+		boolean esSimetrica = true;
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (i != j && matriz [i][j] != matriz [j][i]) {
+					esSimetrica = false;
+				}
+			}
+		}
+		System.out.println("¿La matriz es simétrica? " + esSimetrica);
+		return esSimetrica;
 	}
 }
