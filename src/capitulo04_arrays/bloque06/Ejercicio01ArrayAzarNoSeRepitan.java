@@ -10,7 +10,7 @@ public class Ejercicio01ArrayAzarNoSeRepitan {
 		comprobarArray(array);
 		
 		for (int i = 0 ; i<array.length; i++) {
-			System.out.println(array[i] + " ");
+			System.out.print(array[i] + " ");
 		}
 		//MetodosYClasesAlex.visualizarArray(array);
 	}
@@ -25,7 +25,7 @@ public class Ejercicio01ArrayAzarNoSeRepitan {
 							existe = true;
 						}
 					}
-				}while (existe = true);					
+				}while (existe == true);					
 		}
 	}
 }
